@@ -23,3 +23,47 @@ text-banners:
     title-color: green
     image: images/UAVs-help2.jpg
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+
+image-carousel:
+  - image: images/UAVs-help2.jpg
+  - image: images/image-map.png
+  - image: images/dark-background.jpg
+  - image: images/kissclipart-other-information-icon-clipart-computer-icons-info-8e60439b53daf343.png
+
+specs:
+  - title: Flight
+    items:
+      - name: Flight time
+        spec: Up to a range of x amount of m something 
+        icon: images/icons/Transparent_Logo.png
+      - name: Flight time
+        spec: 4 hrs
+        icon: images/icons/Transparent_Logo.png
+      - name: Flight time
+        spec: 4 hrs
+
+      - name: Flight time
+        spec: 4 hrs
+        icon:  
+
+  - title: Communications
+    items:
+      - name: Bluetooth
+        spec: Up to a range of x amount of m something really long to see
+        icon: 
+      - name: Flight time
+        spec: 4 hrs
+        icon: 
+  
+  - title: Maintenance
+    items:
+      - name: Flight time
+        spec: 4 hrs
+        icon: 
+      - name: Flight time
+        spec: 4 hrs
+        icon:
+      - name: Flight time
+        spec: 4 hrs
+        icon: 
+      

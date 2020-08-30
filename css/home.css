@@ -102,7 +102,7 @@
 
 .text-banner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 40px;
     padding: 40px;
 }
@@ -129,4 +129,111 @@
     .text-banner img {
         width: 75%;
     }
+}
+
+.image-nav {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr 15%;
+    text-align: center;
+    padding: 10px;
+    background-color: #444444;
+    /* height: 100vh; */
+}
+
+.image-carousel {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 5% 1fr 5%;
+    overflow: hidden;
+}
+
+.image-carousel .image{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.image-carousel .image p {
+    padding: 10px;
+    color: white;
+}
+
+.image-carousel .carousel-btn {
+    height: 100%;
+    width: 100%;
+}
+
+.image-carousel a {
+    cursor: pointer;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+
+.image-carousel a:hover {
+    color: lightgray;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /* padding: 10px; */
+}
+
+.active-dot, .dot:hover {
+    background-color: #717171;
+}
+
+@media only screen and (min-width: 568px) {
+
+    .image-carousel a {
+        font-size: 40px;
+    }
+
+    .image-carousel {
+        grid-template-columns: 15% 1fr 15%;
+    }
+
+}
+
+.specs-section {
+    /* background-color: #444444; */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 95%;
+    margin: auto;
+}
+
+.specs-section .section {
+    /* background-color: black; */
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 100%;
+}
+
+.specs-section .spec {
+    overflow: hidden;
+    display: grid; 
+    grid-gap: 1rem;
+    grid-template-columns: 100px 1fr;
+}
+
+.specs-section img {
+    width: 85px;
+    height: 85px;
+}
+
+.gray-background {
+    background-color: #444444;
 }

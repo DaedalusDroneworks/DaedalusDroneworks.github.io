@@ -37,7 +37,7 @@ layout: default
         <img src="{{text-banner.image}}" alt="Image">
         {% endif %}
         <div>
-            <h2 class="{{text-banner.title-color}}">{{text-banner.title}}</h2>
+            <h2 class="{{text-banner.title-color}} ">{{text-banner.title}}</h2>
             <div class="divider background-{{text-banner.title-color}}"></div>
             <p>{{text-banner.text}}</p>
         </div>
@@ -48,4 +48,80 @@ layout: default
 
     {% assign i = i | plus:1 %}
 {% endfor %}
+
+<div class="image-nav">
+    <div class="image-carousel" id="image-carousel">
+        <!-- Previous button -->
+        <a class="prev" onclick="incrementImage(-1)">&#10094;</a>
+
+        {% for image in site.data.home.image-carousel %}
+        <!-- Full-width images with number and caption text -->
+        <div class="image fade">
+            <p>Caption Text</p>
+            <img src="{{image.image}}" style="width:100%">
+        </div>
+        {% endfor %}
+    
+        <!-- Next button -->
+        <a class="next" onclick="incrementImage(1)">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        {% assign range = site.data.home.image-carousel.size | minus: 1 %}
+        {% for i in (0..range) %}
+        <span class="dot" onclick="changeImage({{i}})"></span>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    var imageIndex = 0;
+    changeImage(imageIndex);
+
+    function incrementImage(n){
+        changeImage(imageIndex + n)
+    }
+
+    function changeImage(n) {
+        //Get images and dots
+        var images = document.getElementById("image-carousel").getElementsByClassName("image");
+        var dots = document.getElementsByClassName("dot");
+
+        //Disable the previously shown image
+        images[imageIndex].style.display = "none";
+        dots[imageIndex].className = dots[imageIndex].className.replace(" active-dot", "");
+
+        //Assign new index
+        imageIndex = n
+        if (imageIndex > images.length - 1) {imageIndex = 0}    
+        if (imageIndex < 0) {imageIndex = images.length - 1}
+        
+        //Enable new image
+        images[imageIndex].style.display = "inline-block";  
+        dots[imageIndex].className += " active-dot";
+    }
+</script>
+
+<div class="gray-background">
+<div class="specs-section">
+    {% for section in site.data.home.specs %}
+    <div class="section">
+        <h2 class="purple text-shadow">{{section.title}}</h2>
+        {% for spec in section.items %}
+        <div class="spec">
+            {% if spec.icon %}
+            <img src="{{spec.icon}}" alt="Image">
+            {% else %}
+            <p></p>
+            {% endif %}
+            <div>
+                <p><strong>{{spec.name}}</strong></p>
+                <p class="small-font light-gray">{{spec.spec}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+</div>
 
