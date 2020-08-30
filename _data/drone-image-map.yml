@@ -1,0 +1,34 @@
+image: images/image-map.png
+
+points:
+  - location: 
+    top: 30
+    left: 20
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
+    shadow: left-shadow
+    color: purple
+
+  - location: 
+    top: 20
+    left: 50
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
+    shadow: left-shadow
+    color: green
+
+  - location: 
+    top: 20
+    left: 20
+    text: Location 2
+    shadow: left-shadow
+    color: purple
+    popup-origin: -100px -100px #vertical (negative goes up), horizontal (negative goes left)
+
+  - location: 
+    top: 30
+    left: 30
+    text: Location 3
+    shadow: right-shadow
+    color: purple
+
+
+      

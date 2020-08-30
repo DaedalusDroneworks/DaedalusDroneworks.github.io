@@ -1,0 +1,153 @@
+nav, footer {
+    background-color: #590144;
+    text-align: right;
+    min-width: 350px;
+}
+
+nav div.title {
+    float: left;
+    position: absolute;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-size: min(3.0vw, 15px);
+    z-index: 2;
+}
+
+
+nav div.title img{
+    height: 130px;
+    float: left;
+    margin-top: -20px;
+    position: relative;
+}
+
+nav h2 {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: white;
+    margin: 0;
+    padding: 15px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    list-style: none;
+    font-weight: bold;
+    /* text-align: right; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+nav ul {
+    padding-top: 60px;
+    display: none;
+    transition: max-height .2s ease-out;
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+.menu {
+    display: block;
+}
+
+nav ul li {
+    border-top: #820263 solid 0.2px;
+    margin-left: -40px;
+}
+
+nav ul li a {
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    background-color: #820263;
+}
+
+
+nav ul li a, footer ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    /* width: 100%; */
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    /* float: right; */
+    padding: 25px;
+    position: relative;
+    user-select: none;
+  }
+
+nav .menu-icon .navicon {
+    background:white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  nav .menu-btn {
+    display: none;
+  }
+
+
+  
+  /* 48em = 769px */
+@media only screen and (min-width: 868px) {
+    nav .menu-icon {
+        display: none;
+    }
+    
+    nav ul {
+        text-align: right;
+        padding-top: 20px;
+        display: block;
+    }
+
+    nav ul li, footer ul li {
+        display: inline;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        display: inline;
+
+    }
+    
+}
+  
+

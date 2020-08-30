@@ -1,0 +1,28 @@
+<nav>
+    <div class="title">
+        <!-- <img src="../images/Transparent_Logo.png"/> -->
+        <h2><img src="../images/Transparent_Logo.png"/> Daedalus Droneworks</h2>
+    </div>
+    <a class="menu-icon" for="menu-btn" onclick="toggleMenu()"><span class="navicon"></span></a>
+    <ul id="menu">
+    {% for item in site.data.navigation %}
+    <li>
+        <a href="{{ item.link }}">
+        {{ item.name }}
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+</nav>
+
+<script>
+    function toggleMenu() {
+      var x = document.getElementById("menu");
+      if (x.className === "menu") {
+        x.className += "hide";
+      } 
+      else {
+        x.className = "menu";
+      }
+    }
+</script>

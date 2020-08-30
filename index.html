@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html>
-	<head>
-    <title>Brooke Dobbins, Developer</title>
-    <!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Welcome to my page, I'm a Software Engineer and Game Developer!</h1>
-			</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+---
+title: Home
+layout: default
+---
+<div class="video-banner">
+    <video autoplay preload muted loop id="video">
+        <source src="images/DJIVideo.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+        <h1>Example Mission Statement</h1>
+		<p>A tag line to go below mission statement</p>
+    </div>
+</div>
+
+<div class="drone-img-map">
+    <ul>
+        <img src="images/image-map.png" id="img-map" alt="Workplace">
+        {% for point in site.data.drone-image-map.points %}
+        <li class="image-map-item">
+            <a class="map-point" style="top: {{point.top}}%; left: {{point.left}}%; transform: translate(-{{point.left}}%, -{{point.top}}%)">
+                <i class="fa fa-info" aria-hidden="true"></i>
+                <span class="popup {{point.shadow}} {{point.color}}" style="margin: {{point.popup-origin}}">
+                    <p class="dark-background">{{ point.text }}</p>
+                </span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+

@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Features
+  link: /features.html
+- name: Contact Us
+  link: /contact-us.html
