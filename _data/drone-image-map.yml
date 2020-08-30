@@ -6,21 +6,21 @@ points:
     left: 20
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
     shadow: left-shadow
-    color: purple
+    color: background-purple
 
   - location: 
     top: 20
     left: 50
     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
     shadow: left-shadow
-    color: green
+    color: background-green
 
   - location: 
     top: 20
     left: 20
     text: Location 2
     shadow: left-shadow
-    color: purple
+    color: background-purple
     popup-origin: -100px -100px #vertical (negative goes up), horizontal (negative goes left)
 
   - location: 
@@ -28,7 +28,7 @@ points:
     left: 30
     text: Location 3
     shadow: right-shadow
-    color: purple
+    color: background-orange
 
 
       

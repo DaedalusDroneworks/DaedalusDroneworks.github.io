@@ -9,7 +9,7 @@ layout: default
     </video>
     <div class="overlay">
         <h1>{{site.data.home.title}}</h1>
-		<p>{{site.data.home.sub-title}}</p>
+		<h2>{{site.data.home.sub-title}}</h2>
     </div>
 </div>
 
@@ -28,4 +28,24 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+
+{% assign i = 0 %}
+{% for text-banner in site.data.home.text-banners %}
+    {% assign current = i | modulo:2 %}
+    <div class="text-banner" style="{% if current == 1 %} background-color: #ebebeb; {% endif %}">
+        {% if current == 0 %}
+        <img src="{{text-banner.image}}" alt="Image">
+        {% endif %}
+        <div>
+            <h2 class="{{text-banner.title-color}}">{{text-banner.title}}</h2>
+            <div class="divider background-{{text-banner.title-color}}"></div>
+            <p>{{text-banner.text}}</p>
+        </div>
+        {% if current == 1 %}
+        <img src="{{text-banner.image}}" alt="Image">
+        {% endif %}
+    </div>
+
+    {% assign i = i | plus:1 %}
+{% endfor %}
 

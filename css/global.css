@@ -5,14 +5,40 @@ body {
 
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 20px;
     line-height: 1.4em;
+}
+
+h1, h2, p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 ul li {
     list-style: none;
+}
+
+.background-purple {
+    background-color: rgb(130,2,99, 0.5);
+}
+
+.background-green {
+    background-color: rgb(114,187,83, 0.5);
+}
+
+.background-orange {
+    background-color: rgb(255,168,52, 0.5);
+}
+
+.purple {
+    color: rgb(130,2,99);
+}
+
+.green {
+    color: rgb(114,187,83);
+}
+
+.orange {
+    color: rgb(255,168,52);
 }
