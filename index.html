@@ -4,11 +4,12 @@ layout: default
 ---
 <div class="video-banner">
     <video autoplay preload muted loop id="video">
-        <source src="images/DJIVideo.mp4" type="video/mp4" />
+        <source src="{{site.data.home.video}}" type="video/mp4" />
+        <img src="{{site.data.home.backup-image}}" style="width: 100%">
     </video>
     <div class="overlay">
-        <h1>Example Mission Statement</h1>
-		<p>A tag line to go below mission statement</p>
+        <h1>{{site.data.home.title}}</h1>
+		<p>{{site.data.home.sub-title}}</p>
     </div>
 </div>
 
