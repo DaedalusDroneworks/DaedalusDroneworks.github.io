@@ -19,6 +19,11 @@ ul li {
     list-style: none;
 }
 
+.center {
+    margin: auto;
+    text-align: center;
+}
+
 .background-purple {
     background-color: rgb(130,2,99, 0.5);
 }
@@ -45,6 +50,10 @@ ul li {
 
 .light-gray {
     color: lightgray;
+}
+
+.dark-gray {
+    color: #444444;
 }
 
 .small-font {

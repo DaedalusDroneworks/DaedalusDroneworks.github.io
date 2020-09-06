@@ -105,8 +105,8 @@ layout: default
 <div class="gray-background">
 <div class="specs-section">
     {% for section in site.data.home.specs %}
-    <div class="section">
-        <h2 class="purple text-shadow">{{section.title}}</h2>
+    <div class="section-dark">
+        <h2 class="purple title text-shadow">{{section.title}}</h2>
         {% for spec in section.items %}
         <div class="spec">
             {% if spec.icon %}
@@ -116,7 +116,7 @@ layout: default
             {% endif %}
             <div>
                 <p><strong>{{spec.name}}</strong></p>
-                <p class="small-font light-gray">{{spec.spec}}</p>
+                <p class="small-font">{{spec.spec}}</p>
             </div>
         </div>
         {% endfor %}
