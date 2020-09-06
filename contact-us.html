@@ -1,0 +1,25 @@
+---
+title: Home
+layout: default
+---
+<div class="contact-us gray-background">
+    <div class="specs-section">
+        <div class="section-dark">
+            <h1 class="purple title text-shadow">Questions?</h1>
+            <p class="purple text-shadow">Please call or send an email and we'll be happy to talk with you.</p>
+            {% for item in site.data.contact-us %}
+            <div class="spec">
+                {% if item.icon %}
+                <img src="{{item.icon}}" alt="Image">
+                {% else %}
+                <p></p>
+                {% endif %}
+                <div>
+                    <p><strong>{{item.type}}</strong></p>
+                    <p class="small-font">{{item.value}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
