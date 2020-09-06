@@ -37,6 +37,7 @@ nav ul, footer ul {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
+    color: white;
 }
 
 nav ul {
@@ -72,12 +73,18 @@ nav ul li a, footer ul li a {
     text-decoration: none;
     color: white;
     padding: 20px;
-    /* width: 100%; */
 }
 
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+footer ul {
+    text-align: right;
+    padding: 5px;
+    display: inline;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
 }
 
 nav .menu-icon {
@@ -137,7 +144,7 @@ nav .menu-icon .navicon:after {
         display: block;
     }
 
-    nav ul li, footer ul li {
+    nav ul li {
         display: inline;
         padding: 20px;
     }
@@ -147,6 +154,26 @@ nav .menu-icon .navicon:after {
 
     }
     
+}
+
+footer img {
+    height: 90px;
+}
+
+footer .logo {
+    text-align: left;
+    display: inline;
+    float: left;
+}
+
+footer ul {
+    display: block;
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+footer {
+    overflow: auto;
 }
   
 
