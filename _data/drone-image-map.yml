@@ -1,34 +1,49 @@
-image: images/image-map.png
+image: images/hermes_render.png
 
 points:
-  - location: 
-    top: 30
-    left: 20
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
+  - location:
+    top: 38
+    left: 46
+    text: "<b> Avionics </b> </br>- Built-in Redundancy </br> - Manned Aircraft Avoidance </br> - Can integrate some payload instruments"
     shadow: left-shadow
     color: background-purple
+    popup-origin: -170px -215px #vertical (negative goes up), horizontal (negative goes left)
 
   - location: 
-    top: 20
-    left: 50
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac.
-    shadow: left-shadow
+    top: 73
+    left: 43
+    text: "<b> Efficient Electric Motors </b> </br>- 4 hour flight time </br> - 175 miles of coverage"
+    shadow: right-shadow
     color: background-green
 
   - location: 
-    top: 20
-    left: 20
-    text: Location 2
-    shadow: left-shadow
-    color: background-purple
-    popup-origin: -100px -100px #vertical (negative goes up), horizontal (negative goes left)
-
-  - location: 
-    top: 30
-    left: 30
-    text: Location 3
+    top: 29
+    left: 57
+    text: "<b> Radio Control </b> </br> - Standard 5 mile range, upgradable to 30 miles."
     shadow: right-shadow
     color: background-orange
+    popup-origin: 5px 30px #vertical (negative goes up), horizontal (negative goes left)
 
+  - location: 
+    top: 55
+    left: 40
+    text: "<b> Wing-Locking Tabs </b> </br> - Simply assembly; no tools required </br> - 5 minute deployment in the field"
+    shadow: left-shadow
+    color: background-orange
+    popup-origin: -165px -180px #vertical (negative goes up), horizontal (negative goes left)
+
+  - location: 
+    top: 63
+    left: 15
+    text: "<b> Airspeed Sensor </b> </br> - Capable of operating in 30 MPH winds"
+    shadow: right-shadow
+    color: background-purple
+
+  - location: 
+    top: 45
+    left: 55
+    text: "<b> Parachute </b> </br> - Easy landing without runways </br> - Safe recovery in emergencies"
+    shadow: right-shadow
+    color: background-green
 
       

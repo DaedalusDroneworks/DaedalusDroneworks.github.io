@@ -1,6 +1,6 @@
 - type: Email
   value: sales@daedalus-x.com
-  icon: images/icons/Transparent_Logo.png
-- type: Phone
-  value: 713-748-9639
-  icon: images/icons/Transparent_Logo.png
+  icon: images/icons/emailLogo.png
+# - type: Phone
+#   value: 713-748-9639
+#   icon: images/icons/Transparent_Logo.png
