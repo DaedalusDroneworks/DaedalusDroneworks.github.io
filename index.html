@@ -15,7 +15,7 @@ layout: default
 
 <div class="drone-img-map">
     <ul>
-        <img src="images/image-map.png" id="img-map" alt="Workplace">
+        <img src="{{site.data.drone-image-map.image}}" id="img-map" alt="Workplace">
         {% for point in site.data.drone-image-map.points %}
         <li class="image-map-item">
             <a class="map-point" style="top: {{point.top}}%; left: {{point.left}}%; transform: translate(-{{point.left}}%, -{{point.top}}%)">
@@ -40,7 +40,7 @@ layout: default
         {% for image in site.data.home.image-carousel %}
         <!-- Full-width images with number and caption text -->
         <div class="image fade">
-            <p>Caption Text</p>
+            <p></p>
             <img src="{{image.image}}" style="width:100%">
         </div>
         {% endfor %}
