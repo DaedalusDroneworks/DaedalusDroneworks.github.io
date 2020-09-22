@@ -1,6 +1,6 @@
 title: The Hermes
 sub-title: A new standard in fixed-wing drones
-video: images/DJIVideo.mp4
+video: images/test_background.mp4
 backup-image: images/Hermes_underside.jpg
 
 text-banners:
@@ -14,17 +14,26 @@ text-banners:
   - title: Autonomy
     title-color: orange
     image: images/flyAway.jpg
-    text: We all know it, fixed-wing drones are more stressful to control than multi-rotor counterparts. With Hermes, that has changed. With state-of-the-art avionics and environment monitoring, Hermes is capable of completely autonomous flights, takeoff to landing. Grid mapping and corridor flights are standard capabilities when you command the Hermes. Hermes is designed to be thrown, or launched from a passive launch ramp. No annoying bungees, just place the drone on the ramp and initiate takeoff. Every Hermes comes with a parachute for safe, stress free landings, which combined with the short takeoff capabilities means Hermes does not need a huge clearing to operate, making planning easier. 
+    text: We all know it, fixed-wing drones are more stressful 
+          to control than multi-rotor counterparts. The Hermes has state-of-the-art 
+          avionics and environment monitoring making it capable of autonomous flights, 
+          takeoff to landing. Our drone was designed to be thrown, or launched from a passive launch ramp. 
+          Every Hermes comes with a parachute for safe, stress free landings, which combined with the short takeoff capabilities means Hermes does not need a huge clearing to operate, making planning easier. 
   
   - title: Endurance & Range
     title-color: green
     image: images/flightWithClouds.jpg
-    text: What good is a drone without a useful flight time and range? Hermes can be equipped for up to a 4-hour usable flight time at cruise speeds between 40-45 mph. And don’t worry about the wind keeping you grounded, with a maximum windspeed rating of 25 mph you can work with confidence with less downtime. Maximum control range can be configured to be up to 30 miles. 
+    text: What good is a drone without a useful flight time and range? </br> Hermes comes standard with a 4-hour flight time at cruise speeds between 35-45 MPH. 
+          Our drone was engineered with high winds in mind, with a maximum windspeed rating of 30 MPH you can work with confidence with less downtime. 
+          We provide a standard 5 mile range, but the maximum control range can be configured to be up to 30 miles. 
 
   - title: Safety
     title-color: purple
     image: images/theMoon.jpg
-    text: The Hermes was designed with redundancy in mind. Every Hermes is equipped with a barometer, two compasses, GPS positioning, 3 IMUs, telemetry downlinks, battery and power monitors, redundant avionics power, and an array of other internal sensing abilities. Hermes can be configured to include a vertical rangefinder, airspeed sensors, flow sensors, and ADSB receivers with automatic collision avoidance. Physical safety was not overlooked either, Hermes can fly on one motor, or with one non-functioning control surface in an emergency.  On top of that, in the case of an emergency, Hermes will auto deploy the parachute, even if that emergency was a total loss of power, it will still deploy the chute.  
+    text: The Hermes was designed with redundancy in mind. Every Hermes is equipped with a barometer, two compasses, GPS positioning, 3 inertial measurement units, telemetry downlinks, battery and power monitors, redundant avionics power, and an array of other internal sensing abilities. 
+          Hermes can be configured to include a vertical rangefinder, airspeed sensors, flow sensors, and ADSB receivers with automatic collision avoidance. 
+          Physical safety was not overlooked either, Hermes can fly on one motor, or with one non-functioning control surface in an emergency.  
+          In the case of an emergency, Hermes will auto deploy the parachute, even if that emergency was a total loss of power, it will still deploy the chute.  
 
 image-carousel:
   - image: images/hermes1.jpg
@@ -36,11 +45,11 @@ specs:
   - title: Flight Characteristics
     items:
       - name: Flight time
-        spec: Standard 4h, able to travel 175 miles on a single charge.
+        spec: "Standard 4 hours of battery life, able to travel 175 miles on a single charge."
         icon: images/icons/battery.png
 
       - name: Crusing Speed
-        spec: Optimized for flight speeds between 35 - 45 MPH
+        spec: Optimized for flight speeds between 35 - 45 MPH.
         icon: images/icons/plane.png
 
       - name: Autonomous Control
@@ -55,27 +64,27 @@ specs:
 
       - name: Ground Control Station
         spec: Connects with avaliable open-source ground control stations (qGroundControl, MissionPlanner) 
-              for easy flight-path visualization
+              for easy flight-path visualization.
         icon: images/icons/computer.png
 
       - name: Flight Planning
         spec: Plan flights with a ground control station (qGroundControl, MissonPlanner) and easily upload 
               before flight. Designed with usability in mind, modified flight paths can be automatically uploaded 
-              even during flight
+              even during flight.
         icon: images/icons/map.png
   
   - title: Maintenance
     items:
       - name: Simple Assembly/Dissambly
-        spec: Engineered for easy transport, breaks down to fit into a 1.15 m (~4.7 ft) carrying container
+        spec: Engineered for easy transport, breaks down to fit into a 1.15 m (~4.7 ft) carrying container.
         icon: images/icons/opensource.png
 
       - name: Built in Redundancy
-        spec: All major flight systems are double or tripple redundent to prevent inflight failure
+        spec: All major flight systems are double or tripple redundent to prevent inflight failure.
         icon: images/icons/redundant.png
       
       - name: Open-source components
         spec: All major components are open-source and allow for further customization to fit user-specific
-              needs
+              needs.
         icon: images/icons/modular.png
       
