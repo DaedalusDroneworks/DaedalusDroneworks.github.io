@@ -211,6 +211,8 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 95%;
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .specs-section .section {

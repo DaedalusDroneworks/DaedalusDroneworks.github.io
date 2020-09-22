@@ -84,7 +84,7 @@ specs:
         icon: images/icons/redundant.png
       
       - name: Open-source components
-        spec: All major components are open-source and allow for further customization to fit user-specific.
-              needs
+        spec: All major components are open-source and allow for further customization to fit user-specific
+              needs.
         icon: images/icons/modular.png
       
